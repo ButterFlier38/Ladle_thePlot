@@ -15,6 +15,7 @@ struct IngredientsView: View {
 
 struct IngredientsView_Previews: PreviewProvider {
     static var previews: some View {
-        IngredientsView()
+        IngredientsView().previewDevice("iPad Pro (11-inch) (3rd generation)")
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

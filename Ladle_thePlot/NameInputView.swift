@@ -15,6 +15,7 @@ struct NameInputView: View {
 
 struct NameInputView_Previews: PreviewProvider {
     static var previews: some View {
-        NameInputView()
+        NameInputView().previewDevice("iPad Pro (11-inch) (3rd generation)")
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }
