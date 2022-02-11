@@ -32,8 +32,13 @@ struct NameInputView: View {
             Circle().foregroundColor(CustomColor.bggreen).scaleEffect(0.7).position(x: 1000, y: 150)
             Circle().foregroundColor(CustomColor.bgyellow).scaleEffect(0.7).position(x: 600, y: 400)
             Circle().foregroundColor(CustomColor.bgblue).scaleEffect(0.6).position(x: 600, y: 80)
+            Image("character_tonia").scaleEffect(0.03).position(x: 720, y: 100)
+            Image("character_giorgia").scaleEffect(0.03).position(x: 460, y: 100)
+            Image("character_nino").scaleEffect(0.03).position(x: 550, y: 120)
+            Image("character_gino").scaleEffect(0.03).position(x: 640, y: 125)
+           
             VStack {
-            Text("What's your child's name?").font(Font.custom("HappyMonkey-Regular", size: 30)).foregroundColor(CustomColor.selectionblue)
+                Text("What's your child's name?").font(Font.custom("HappyMonkey-Regular", size: 30 )).fontWeight(.bold).foregroundColor(CustomColor.selectionblue)
             
                        if !username.isEmpty { // <1>
                            Text("Welcome \(username)!") // <2>
