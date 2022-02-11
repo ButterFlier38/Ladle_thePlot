@@ -16,5 +16,7 @@ struct AvatarSelectorView: View {
 struct AvatarSelectorView_Previews: PreviewProvider {
     static var previews: some View {
         AvatarSelectorView()
+            .previewDevice("iPad Pro (11-inch) (3rd generation)")
+.previewInterfaceOrientation(.landscapeLeft)
     }
 }
