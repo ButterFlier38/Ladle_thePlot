@@ -17,6 +17,8 @@
 		2780A37C27B65BFF001B34CE /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780A37B27B65BFF001B34CE /* RecipesView.swift */; };
 		2780A37E27B65C42001B34CE /* IngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780A37D27B65C42001B34CE /* IngredientsView.swift */; };
 		2780A38027B65C60001B34CE /* StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780A37F27B65C60001B34CE /* StepsView.swift */; };
+		47A0B53927B6642D0021DE98 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A0B53827B6642D0021DE98 /* Recipe.swift */; };
+		47A0B53B27B664C60021DE98 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A0B53A27B664C60021DE98 /* Avatar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		2780A37B27B65BFF001B34CE /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
 		2780A37D27B65C42001B34CE /* IngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsView.swift; sourceTree = "<group>"; };
 		2780A37F27B65C60001B34CE /* StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsView.swift; sourceTree = "<group>"; };
+		47A0B53827B6642D0021DE98 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		47A0B53A27B664C60021DE98 /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 		2702B04827B652C100A0E5DD /* Ladle_thePlot */ = {
 			isa = PBXGroup;
 			children = (
+				47A0B53627B662EC0021DE98 /* Model */,
 				2702B04927B652C100A0E5DD /* Ladle_thePlotApp.swift */,
 				2702B04B27B652C100A0E5DD /* ContentView.swift */,
 				2780A37527B65B57001B34CE /* CreateRecipeView.swift */,
@@ -83,6 +88,15 @@
 				2702B05027B652C400A0E5DD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		47A0B53627B662EC0021DE98 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47A0B53827B6642D0021DE98 /* Recipe.swift */,
+				47A0B53A27B664C60021DE98 /* Avatar.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,7 +175,9 @@
 				2780A37E27B65C42001B34CE /* IngredientsView.swift in Sources */,
 				2780A38027B65C60001B34CE /* StepsView.swift in Sources */,
 				2780A37827B65B87001B34CE /* AvatarSelectorView.swift in Sources */,
+				47A0B53927B6642D0021DE98 /* Recipe.swift in Sources */,
 				2780A37C27B65BFF001B34CE /* RecipesView.swift in Sources */,
+				47A0B53B27B664C60021DE98 /* Avatar.swift in Sources */,
 				2702B04A27B652C100A0E5DD /* Ladle_thePlotApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
