@@ -11,6 +11,12 @@
 		2702B04C27B652C100A0E5DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2702B04B27B652C100A0E5DD /* ContentView.swift */; };
 		2702B04E27B652C400A0E5DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2702B04D27B652C400A0E5DD /* Assets.xcassets */; };
 		2702B05127B652C400A0E5DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2702B05027B652C400A0E5DD /* Preview Assets.xcassets */; };
+		2780A37627B65B57001B34CE /* CreateRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780A37527B65B57001B34CE /* CreateRecipeView.swift */; };
+		2780A37827B65B87001B34CE /* AvatarSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780A37727B65B87001B34CE /* AvatarSelectorView.swift */; };
+		2780A37A27B65BDA001B34CE /* NameInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780A37927B65BDA001B34CE /* NameInputView.swift */; };
+		2780A37C27B65BFF001B34CE /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780A37B27B65BFF001B34CE /* RecipesView.swift */; };
+		2780A37E27B65C42001B34CE /* IngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780A37D27B65C42001B34CE /* IngredientsView.swift */; };
+		2780A38027B65C60001B34CE /* StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780A37F27B65C60001B34CE /* StepsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		2702B04B27B652C100A0E5DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2702B04D27B652C400A0E5DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2702B05027B652C400A0E5DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2780A37527B65B57001B34CE /* CreateRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRecipeView.swift; sourceTree = "<group>"; };
+		2780A37727B65B87001B34CE /* AvatarSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarSelectorView.swift; sourceTree = "<group>"; };
+		2780A37927B65BDA001B34CE /* NameInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInputView.swift; sourceTree = "<group>"; };
+		2780A37B27B65BFF001B34CE /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
+		2780A37D27B65C42001B34CE /* IngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsView.swift; sourceTree = "<group>"; };
+		2780A37F27B65C60001B34CE /* StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,12 @@
 			children = (
 				2702B04927B652C100A0E5DD /* Ladle_thePlotApp.swift */,
 				2702B04B27B652C100A0E5DD /* ContentView.swift */,
+				2780A37527B65B57001B34CE /* CreateRecipeView.swift */,
+				2780A37727B65B87001B34CE /* AvatarSelectorView.swift */,
+				2780A37927B65BDA001B34CE /* NameInputView.swift */,
+				2780A37B27B65BFF001B34CE /* RecipesView.swift */,
+				2780A37D27B65C42001B34CE /* IngredientsView.swift */,
+				2780A37F27B65C60001B34CE /* StepsView.swift */,
 				2702B04D27B652C400A0E5DD /* Assets.xcassets */,
 				2702B04F27B652C400A0E5DD /* Preview Content */,
 			);
@@ -137,7 +155,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2780A37A27B65BDA001B34CE /* NameInputView.swift in Sources */,
+				2780A37627B65B57001B34CE /* CreateRecipeView.swift in Sources */,
 				2702B04C27B652C100A0E5DD /* ContentView.swift in Sources */,
+				2780A37E27B65C42001B34CE /* IngredientsView.swift in Sources */,
+				2780A38027B65C60001B34CE /* StepsView.swift in Sources */,
+				2780A37827B65B87001B34CE /* AvatarSelectorView.swift in Sources */,
+				2780A37C27B65BFF001B34CE /* RecipesView.swift in Sources */,
 				2702B04A27B652C100A0E5DD /* Ladle_thePlotApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
