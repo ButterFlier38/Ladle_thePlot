@@ -1,9 +1,3 @@
-//
-//  NameInputView.swift
-//  Ladle_thePlot
-//
-//  Created by Irene Fernando on 11/02/22.
-//
 
 //
 //  NameInputView.swift
