@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-
+//Declaring all the custom colors that we use in this project
 struct CustomColor {
     static let bgblue = Color("bgblue")
     static let bggreen = Color("bggreen")
@@ -16,8 +16,13 @@ struct CustomColor {
     static let bgyellow = Color("bgyellow")
     static let selectionblue = Color("selectionblue")
     static let selectiongreen = Color("selectiongreen")
+    static let selectionyellow = Color("selectionyellow")
+    static let selectionpink = Color("selectionpink")
     // Add more here...
 }
+
+
+
 struct NameInputView: View {
     @State private var username: String = ""
     var body: some View {

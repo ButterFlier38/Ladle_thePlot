@@ -10,21 +10,14 @@ import UIKit
 
 struct RecipesView: View {
     @StateObject var recipeInfo = RecipeList()
+//Layout for the 3row grid
     let layout = [
         GridItem(.flexible(minimum: 175)),
         GridItem(.flexible(minimum: 175)),
         GridItem(.flexible(minimum: 175))
     ]
     
-//    func getRandomColor() -> UIColor {
-//         //Generate between 0 to 1
-//         let bgblue = Color("bgblue")
-//        let bggreen = Color("bggreen")
-//         let bgpink = Color("bgpink")
-//         let bgyellow = Color("bgyellow")
-//
-//
-//        return UIColor(bgblue:bgblue, bggreen: bggreen, bgpink: bgpink,bgyellow: bgyellow, alpha: 1.0)}
+
     
     
     var body: some View {
@@ -88,14 +81,9 @@ struct RecipesView: View {
                                                 .frame(width: 300, height: 200, alignment: .center)
                                                 .padding()
                 }
-                
-                
-                
-                
-                
-            })
-                  }
-                  }
+           })
+     }
+   }
 }
                   
                     
