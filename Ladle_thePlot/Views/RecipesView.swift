@@ -21,6 +21,14 @@ struct RecipesView: View {
     
     
     var body: some View {
+        ZStack{
+            Circle().foregroundColor(CustomColor.bgpink).scaleEffect(0.4).position(x: 150, y: 0)
+            Circle().foregroundColor(CustomColor.bgyellow).scaleEffect(0.5).position(x: 900, y: 80)
+           Circle().foregroundColor(CustomColor.bgblue).scaleEffect(0.45).position(x: 380, y: 60)
+          
+            Circle().foregroundColor(CustomColor.bggreen).scaleEffect(0.5).position(x: 600, y: 120)
+           
+        
         VStack{
             Text("Recipes").font(Font.custom("HappyMonkey-Regular", size: 70 )).fontWeight(.bold).foregroundColor(CustomColor.selectionblue)  .frame(maxWidth: .infinity, alignment: .leading) .padding(.leading)              .shadow(color: CustomColor.selectionblue, radius: 3)
             LazyVGrid(columns: layout ,content: {
@@ -48,6 +56,9 @@ struct RecipesView: View {
                                                 .fill(CustomColor.bgblue)
                                                 .frame(width: 300, height: 200, alignment: .center)
                                                 .padding()
+                                               .overlay(
+                                                    RoundedRectangle(cornerRadius: 60)
+                                                        .stroke(Color.gray, lineWidth: 4).padding())
                         Text("Pizza")
                     }
                 }
@@ -56,36 +67,51 @@ struct RecipesView: View {
                                                 .fill(CustomColor.bgpink)
                                                 .frame(width: 300, height: 200, alignment: .center)
                                                 .padding()
+                                                .overlay(
+                                                     RoundedRectangle(cornerRadius: 60)
+                                                         .stroke(Color.gray, lineWidth: 4).padding())
                 }
                 NavigationLink(destination: IngredientsView()) {
                                 RoundedRectangle(cornerRadius: 60, style: .continuous)
                                                 .fill(CustomColor.bgyellow)
                                                 .frame(width: 300, height: 200, alignment: .center)
                                                 .padding()
+                                                .overlay(
+                                                     RoundedRectangle(cornerRadius: 60)
+                                                         .stroke(Color.gray, lineWidth: 4).padding())
                 }
                 NavigationLink(destination: IngredientsView()) {
                                 RoundedRectangle(cornerRadius: 60, style: .continuous)
                                                 .fill(CustomColor.bggreen)
                                                 .frame(width: 300, height: 200, alignment: .center)
                                                 .padding()
+                                                .overlay(
+                                                     RoundedRectangle(cornerRadius: 60)
+                                                         .stroke(Color.gray, lineWidth: 4).padding())
                 }
                 NavigationLink(destination: IngredientsView()) {
                                 RoundedRectangle(cornerRadius: 60, style: .continuous)
                                                 .fill(CustomColor.bgblue)
                                                 .frame(width: 300, height: 200, alignment: .center)
                                                 .padding()
+                                                .overlay(
+                                                     RoundedRectangle(cornerRadius: 60)
+                                                         .stroke(Color.gray, lineWidth: 4).padding())
                 }
                 NavigationLink(destination: IngredientsView()) {
                                 RoundedRectangle(cornerRadius: 60, style: .continuous)
                                                 .fill(CustomColor.bgpink)
                                                 .frame(width: 300, height: 200, alignment: .center)
                                                 .padding()
+                                                .overlay(
+                                                     RoundedRectangle(cornerRadius: 60)
+                                                         .stroke(Color.gray, lineWidth: 4).padding())
                 }
            })
      }
    }
 }
-                  
+}
                     
    
 

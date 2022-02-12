@@ -38,7 +38,7 @@ struct NameInputView: View {
             Image("character_gino").scaleEffect(0.03).position(x: 640, y: 125)
            Spacer()
             VStack {
-                Text("What's your child's name?").font(Font.custom("HappyMonkey-Regular", size: 30 )).fontWeight(.bold).foregroundColor(CustomColor.selectionblue)
+                Text("What's your child's name?").font(Font.custom("HappyMonkey-Regular", size: 30 )).fontWeight(.bold).foregroundColor(CustomColor.selectionblue) .shadow(color: CustomColor.selectionblue, radius: 1)
             
         
                 ZStack{
@@ -46,7 +46,7 @@ struct NameInputView: View {
                                     .fill(Color.white)
                                     .frame(width: 300, height: 80, alignment: .center)
                     
-                    TextField("Input name", text: $username).frame(width: 300, height: 80, alignment: .center).font(Font.custom("HappyMonkey-Regular", size: 20)).foregroundColor(CustomColor.selectionblue)
+                    TextField("Input name", text: $username).frame(width: 300, height: 80, alignment: .center).font(Font.custom("HappyMonkey-Regular", size: 20)).foregroundColor(CustomColor.selectionblue) .shadow(color: CustomColor.bgblue, radius: 1)
                    }
             }
         }
