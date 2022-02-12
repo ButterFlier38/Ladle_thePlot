@@ -72,15 +72,10 @@
 			children = (
 				2754CEA527B66F2F002761F9 /* Ladle-thePlot-Info.plist */,
 				2754CEA027B66EFB002761F9 /* CustomFonts */,
+				2754CEA627B7A695002761F9 /* Views */,
 				47A0B53627B662EC0021DE98 /* Model */,
 				2702B04927B652C100A0E5DD /* Ladle_thePlotApp.swift */,
 				2702B04B27B652C100A0E5DD /* ContentView.swift */,
-				2780A37527B65B57001B34CE /* CreateRecipeView.swift */,
-				2780A37727B65B87001B34CE /* AvatarSelectorView.swift */,
-				2780A37927B65BDA001B34CE /* NameInputView.swift */,
-				2780A37B27B65BFF001B34CE /* RecipesView.swift */,
-				2780A37D27B65C42001B34CE /* IngredientsView.swift */,
-				2780A37F27B65C60001B34CE /* StepsView.swift */,
 				2702B04D27B652C400A0E5DD /* Assets.xcassets */,
 				2702B04F27B652C400A0E5DD /* Preview Content */,
 			);
@@ -102,6 +97,19 @@
 				2754CEA127B66F14002761F9 /* OFL.txt */,
 			);
 			path = CustomFonts;
+			sourceTree = "<group>";
+		};
+		2754CEA627B7A695002761F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2780A37527B65B57001B34CE /* CreateRecipeView.swift */,
+				2780A37727B65B87001B34CE /* AvatarSelectorView.swift */,
+				2780A37927B65BDA001B34CE /* NameInputView.swift */,
+				2780A37B27B65BFF001B34CE /* RecipesView.swift */,
+				2780A37D27B65C42001B34CE /* IngredientsView.swift */,
+				2780A37F27B65C60001B34CE /* StepsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		47A0B53627B662EC0021DE98 /* Model */ = {
