@@ -15,6 +15,7 @@ struct CustomColor {
     static let bgpink = Color("bgpink")
     static let bgyellow = Color("bgyellow")
     static let selectionblue = Color("selectionblue")
+    static let selectiongreen = Color("selectiongreen")
     // Add more here...
 }
 struct NameInputView: View {
