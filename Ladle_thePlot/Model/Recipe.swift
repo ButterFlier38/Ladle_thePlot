@@ -20,3 +20,7 @@ class Recipe : Identifiable {
         self.isChoosen = isChoosen
     }
 }
+
+
+//FIND A WAY TO PROVIDE ALTERNATIVE INGREDIENTS
+//maybe a dictionary with the number of the step and the alternative ingredient
