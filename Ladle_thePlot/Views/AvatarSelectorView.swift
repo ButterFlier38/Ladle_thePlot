@@ -26,45 +26,51 @@ struct AvatarSelectorView: View {
                                 .overlay(Image("character_giorgia").scaleEffect(0.03).position(x: 160, y: 120))
                                 .overlay(Image("character_nino").scaleEffect(0.03).position(x: 250, y: 120))
                                 .overlay(Image("character_gino").scaleEffect(0.03).position(x: 340, y: 120))
-                                .overlay( Text("What's your child's name?").font(Font.custom("HappyMonkey-Regular", size: 35 )).fontWeight(.bold).foregroundColor(CustomColor.selectionblue) .shadow(color: CustomColor.selectionblue, radius: 1).position(x: 300, y: 250))
+                                .overlay( Text("Select your avatar : ").font(Font.custom("HappyMonkey-Regular", size: 35 )).fontWeight(.bold).foregroundColor(CustomColor.selectionblue) .shadow(color: CustomColor.selectionblue, radius: 1).position(x: 300, y: 250))
            }
-           
-                HStack(alignment: .center, spacing: 10){
-        
-    //                Image("character_gino")
-    //                    .scaleEffect(0.03)
-                
-                
-               
+                ZStack{
+                    RoundedRectangle(cornerRadius: 80, style: .continuous)
+                                    .fill(Color.white)
+                                    .frame(width: 900, height: 300, alignment: .center)
+                HStack(alignment: .center, spacing: 20){
+
                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                        Circle().overlay(
-                        Image("character_gino").scaleEffect(0.03)
-                                 .clipShape(Circle())
-                                  .shadow(radius: 10)
-                            .overlay(Circle().stroke(Color.red, lineWidth: 5)) )}
+                        Circle().foregroundColor(.white)
+                            .overlay(Circle().stroke(CustomColor.selectiongreen, lineWidth: 4)
+                            .overlay(Image("character_giorgia")
+                                .scaleEffect(0.035)
+                                        .padding(.trailing)
+                                 .clipShape(Circle().scale(0.047))
+                            ))
+                      }
                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                        Circle().overlay(
-                        Image("character_gino").scaleEffect(0.03)
-                                 .clipShape(Circle())
-                                  .shadow(radius: 10)
-                            .overlay(Circle().stroke(Color.red, lineWidth: 5)) )}
+                        Circle().foregroundColor(.white)
+                            .overlay(Circle().stroke(CustomColor.selectionpink, lineWidth: 4)
+                            .overlay(Image("character_gino")
+                                .scaleEffect(0.033)
+                                        .padding(.top)
+                                 .clipShape(Circle().scale(0.047))
+                            ))
+                      }
               
                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                        Circle().overlay(
-                        Image("character_gino").scaleEffect(0.03)
-                                 .clipShape(Circle())
-                                  .shadow(radius: 10)
-                            .overlay(Circle().stroke(Color.red, lineWidth: 5)) )}
+                        Circle().foregroundColor(.white)
+                            .overlay(Circle().stroke(CustomColor.selectionblue, lineWidth: 4)
+                            .overlay(Image("character_tonia")
+                                .scaleEffect(0.035)
+                                        .padding(.top)
+                                 .clipShape(Circle().scale(0.038))
+                            ))
+                      }
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                     Circle().foregroundColor(.white)
-                        .overlay(Image("character_gino")
-                            .scaleEffect(0.035)
-                             .clipShape(Circle().scale(0.045))
-                              .shadow(radius: 10) )
-                    .overlay(Circle().stroke(Color.red, lineWidth: 2)
-                    )
-                  
-                }
+                        .overlay(Circle().stroke(CustomColor.selectionyellow, lineWidth: 4)
+                        .overlay(Image("character_nino")
+                            .scaleEffect(0.033)
+                                    .padding(.top)
+                             .clipShape(Circle().scale(0.044))
+                        ))
+                  }
                     
                
                 //                Image("character_gino")
@@ -73,8 +79,8 @@ struct AvatarSelectorView: View {
                    
     //                         .overlay(Circle().stroke(Color.red, lineWidth: 5))
                     
-                }.frame(width: 700, height: 250, alignment: .center)
-            
+                }.frame(width: 800, height: 300, alignment: .center)
+            }
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                     RoundedRectangle(cornerRadius: 60, style: .continuous)
                                     .fill(CustomColor.selectionblue)
