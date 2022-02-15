@@ -13,7 +13,7 @@
 		2702B05127B652C400A0E5DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2702B05027B652C400A0E5DD /* Preview Assets.xcassets */; };
 		2754CEA327B66F14002761F9 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2754CEA127B66F14002761F9 /* OFL.txt */; };
 		2754CEA427B66F14002761F9 /* HappyMonkey-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2754CEA227B66F14002761F9 /* HappyMonkey-Regular.ttf */; };
-		2754CEA827B7AB3E002761F9 /* RecipeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2754CEA727B7AB3E002761F9 /* RecipeList.swift */; };
+		2754CEA827B7AB3E002761F9 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2754CEA727B7AB3E002761F9 /* RecipeViewModel.swift */; };
 		2780A37627B65B57001B34CE /* CreateRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780A37527B65B57001B34CE /* CreateRecipeView.swift */; };
 		2780A37827B65B87001B34CE /* AvatarSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780A37727B65B87001B34CE /* AvatarSelectorView.swift */; };
 		2780A37A27B65BDA001B34CE /* NameInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780A37927B65BDA001B34CE /* NameInputView.swift */; };
@@ -22,6 +22,8 @@
 		2780A38027B65C60001B34CE /* StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780A37F27B65C60001B34CE /* StepsView.swift */; };
 		4705F17127B90119002287C5 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4705F17027B90119002287C5 /* Avatar.swift */; };
 		4705F17A27B90D65002287C5 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4705F17927B90D65002287C5 /* Ingredient.swift */; };
+		47260E9327BBFBA900F0ED80 /* AvatarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47260E9227BBFBA900F0ED80 /* AvatarViewModel.swift */; };
+		47260E9527BC242400F0ED80 /* AvatarSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47260E9427BC242400F0ED80 /* AvatarSelectionView.swift */; };
 		47A0B53927B6642D0021DE98 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A0B53827B6642D0021DE98 /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +36,7 @@
 		2754CEA127B66F14002761F9 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		2754CEA227B66F14002761F9 /* HappyMonkey-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HappyMonkey-Regular.ttf"; sourceTree = "<group>"; };
 		2754CEA527B66F2F002761F9 /* Ladle-thePlot-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Ladle-thePlot-Info.plist"; sourceTree = SOURCE_ROOT; };
-		2754CEA727B7AB3E002761F9 /* RecipeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeList.swift; sourceTree = "<group>"; };
+		2754CEA727B7AB3E002761F9 /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
 		2780A37527B65B57001B34CE /* CreateRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRecipeView.swift; sourceTree = "<group>"; };
 		2780A37727B65B87001B34CE /* AvatarSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarSelectorView.swift; sourceTree = "<group>"; };
 		2780A37927B65BDA001B34CE /* NameInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInputView.swift; sourceTree = "<group>"; };
@@ -43,6 +45,8 @@
 		2780A37F27B65C60001B34CE /* StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsView.swift; sourceTree = "<group>"; };
 		4705F17027B90119002287C5 /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		4705F17927B90D65002287C5 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		47260E9227BBFBA900F0ED80 /* AvatarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarViewModel.swift; sourceTree = "<group>"; };
+		47260E9427BC242400F0ED80 /* AvatarSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarSelectionView.swift; sourceTree = "<group>"; };
 		47A0B53827B6642D0021DE98 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +80,7 @@
 		2702B04827B652C100A0E5DD /* Ladle_thePlot */ = {
 			isa = PBXGroup;
 			children = (
+				47260E9127BBFAE000F0ED80 /* ViewModel */,
 				2754CEA527B66F2F002761F9 /* Ladle-thePlot-Info.plist */,
 				2754CEA027B66EFB002761F9 /* CustomFonts */,
 				2754CEA627B7A695002761F9 /* Views */,
@@ -114,15 +119,24 @@
 				2780A37B27B65BFF001B34CE /* RecipesView.swift */,
 				2780A37D27B65C42001B34CE /* IngredientsView.swift */,
 				2780A37F27B65C60001B34CE /* StepsView.swift */,
+				47260E9427BC242400F0ED80 /* AvatarSelectionView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		47260E9127BBFAE000F0ED80 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2754CEA727B7AB3E002761F9 /* RecipeViewModel.swift */,
+				47260E9227BBFBA900F0ED80 /* AvatarViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		47A0B53627B662EC0021DE98 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				47A0B53827B6642D0021DE98 /* Recipe.swift */,
-				2754CEA727B7AB3E002761F9 /* RecipeList.swift */,
 				4705F17027B90119002287C5 /* Avatar.swift */,
 				4705F17927B90D65002287C5 /* Ingredient.swift */,
 			);
@@ -203,12 +217,14 @@
 			files = (
 				2780A37A27B65BDA001B34CE /* NameInputView.swift in Sources */,
 				2780A37627B65B57001B34CE /* CreateRecipeView.swift in Sources */,
+				47260E9527BC242400F0ED80 /* AvatarSelectionView.swift in Sources */,
 				2702B04C27B652C100A0E5DD /* ContentView.swift in Sources */,
 				2780A37E27B65C42001B34CE /* IngredientsView.swift in Sources */,
 				2780A38027B65C60001B34CE /* StepsView.swift in Sources */,
 				2780A37827B65B87001B34CE /* AvatarSelectorView.swift in Sources */,
+				47260E9327BBFBA900F0ED80 /* AvatarViewModel.swift in Sources */,
 				47A0B53927B6642D0021DE98 /* Recipe.swift in Sources */,
-				2754CEA827B7AB3E002761F9 /* RecipeList.swift in Sources */,
+				2754CEA827B7AB3E002761F9 /* RecipeViewModel.swift in Sources */,
 				4705F17A27B90D65002287C5 /* Ingredient.swift in Sources */,
 				4705F17127B90119002287C5 /* Avatar.swift in Sources */,
 				2780A37C27B65BFF001B34CE /* RecipesView.swift in Sources */,

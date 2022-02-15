@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-class Recipe : Codable, Identifiable {
+
+struct Recipe : Identifiable {
     var id = UUID()
     var name :String // name of the recipe
     var image :[String] // names of the images for each recipe
@@ -18,17 +19,17 @@ class Recipe : Codable, Identifiable {
     var alternativeSteps : [Int:String]
     var isChoosen :Bool
     
-    internal init(name: String, image :[String], ingredients :[Int :String],ingredientsQuantities :[Int: String], alternativeIngredients :[Int :String],alternativeQuantities:[Int :String], steps :[Int:String],alternativeSteps : [Int:String], isChoosen: Bool) {
-        self.name = name
-        self.image = image
-        self.ingredients = ingredients
-        self.ingredientsQuantities = ingredientsQuantities
-        self.alternativeIngredients = alternativeIngredients
-        self.alternativeQuantities = alternativeQuantities
-        self.steps = steps
-        self.alternativeSteps = alternativeSteps
-        self.isChoosen = isChoosen
-    }
+//    internal init(name: String, image :[String], ingredients :[Int :String],ingredientsQuantities :[Int: String], alternativeIngredients :[Int :String],alternativeQuantities:[Int :String], steps :[Int:String],alternativeSteps : [Int:String], isChoosen: Bool) {
+//        self.name = name
+//        self.image = image
+//        self.ingredients = ingredients
+//        self.ingredientsQuantities = ingredientsQuantities
+//        self.alternativeIngredients = alternativeIngredients
+//        self.alternativeQuantities = alternativeQuantities
+//        self.steps = steps
+//        self.alternativeSteps = alternativeSteps
+//        self.isChoosen = isChoosen
+//    }
 }
 
 

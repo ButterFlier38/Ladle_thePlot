@@ -14,6 +14,7 @@ struct AvatarSelectorView: View {
     @State private var Tonia: Bool = false
     @State private var Gino: Bool = false
     @State private var Nino: Bool = false
+   
     var body: some View {
         ZStack{
             Circle().foregroundColor(CustomColor.bgyellow).scaleEffect(0.7).position(x: 1050, y: 700)
