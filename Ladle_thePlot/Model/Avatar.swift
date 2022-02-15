@@ -2,18 +2,17 @@
 //  Avatar.swift
 //  Ladle_thePlot
 //
-//  Created by Jasmine Aufiero on 11/02/22.
+//  Created by Jasmine Aufiero on 13/02/22.
 //
 
-import Foundation
 import SwiftUI
 
-struct Avatar : Identifiable, Hashable{
+struct Avatar : Codable, Identifiable {
     var id = UUID()
     var name :String
-    var backgroundColor :Color
-    var selectionsColor :Color
-    var avatarImage :String
-    var avatarFace :String
+    var image :String
+    var headImage :String
+    var backgroundColor :String
+    var selectedColor :String
     var isChoosen :Bool
 }
