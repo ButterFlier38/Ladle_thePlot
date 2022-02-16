@@ -243,6 +243,7 @@
 				4705F17A27B90D65002287C5 /* Ingredient.swift in Sources */,
 				47C5A9B627BCF6CB004D4A9A /* RecipeCardView.swift in Sources */,
 				4705F17127B90119002287C5 /* Avatar.swift in Sources */,
+				5AA7510427BD10F1009F8ACC /* LetsmakeitView.swift in Sources */,
 				2780A37C27B65BFF001B34CE /* RecipesView.swift in Sources */,
 				2702B04A27B652C100A0E5DD /* Ladle_thePlotApp.swift in Sources */,
 			);
