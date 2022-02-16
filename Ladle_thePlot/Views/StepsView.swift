@@ -74,7 +74,8 @@ struct StepsView: View {
                     Text("Now take the strawberries, wash them and cut them in half.  Repeat the process with the banana. Finally add the fruit to the blender and turn it on! ").frame(width: 400, height: 200, alignment: .center).font(Font.custom("HappyMonkey-Regular", size: 25 )).foregroundColor(CustomColor.selectionblue)
             }.frame(maxWidth: .infinity, alignment: .trailing).padding(.trailing, 70)
                 
-            }.navigationBarHidden(true)
+            }
+//            .navigationBarHidden(true)
                 Spacer()
                 NavigationLink {
 //                                LetsmakeitView()
@@ -108,7 +109,16 @@ struct StepsView: View {
                                 .scaleEffect(0.5)
                                 .aspectRatio(0.7, contentMode: .fit)
                                 .position(x: 170, y: 650)
-    }
+        }
+//                                .navigationBarItems(leading:
+//                                ZStack{
+//                        Circle().foregroundColor(CustomColor.selectionblue).frame(width: 100, height: 100)
+//                                Image(systemName: "arrowshape.turn.up.backward.fill").scaleEffect(2.5).foregroundColor(.white)}
+//
+//                                , trailing:     ZStack{
+//            Circle().foregroundColor(CustomColor.selectionblue).frame(width: 100, height: 100)
+//                    Image(systemName: "arrowshape.turn.up.backward.fill").scaleEffect(2.5).foregroundColor(.white)}
+//                )
     }
    }
 }
