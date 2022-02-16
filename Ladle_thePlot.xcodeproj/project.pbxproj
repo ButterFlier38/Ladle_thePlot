@@ -25,6 +25,7 @@
 		47260E9327BBFBA900F0ED80 /* AvatarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47260E9227BBFBA900F0ED80 /* AvatarViewModel.swift */; };
 		47260E9527BC242400F0ED80 /* AvatarSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47260E9427BC242400F0ED80 /* AvatarSelectionView.swift */; };
 		47A0B53927B6642D0021DE98 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A0B53827B6642D0021DE98 /* Recipe.swift */; };
+		47C5A9B627BCF6CB004D4A9A /* RecipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C5A9B527BCF6CB004D4A9A /* RecipeCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		47260E9227BBFBA900F0ED80 /* AvatarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarViewModel.swift; sourceTree = "<group>"; };
 		47260E9427BC242400F0ED80 /* AvatarSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarSelectionView.swift; sourceTree = "<group>"; };
 		47A0B53827B6642D0021DE98 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		47C5A9B527BCF6CB004D4A9A /* RecipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				2780A37D27B65C42001B34CE /* IngredientsView.swift */,
 				2780A37F27B65C60001B34CE /* StepsView.swift */,
 				47260E9427BC242400F0ED80 /* AvatarSelectionView.swift */,
+				47C5A9B527BCF6CB004D4A9A /* RecipeCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 		47260E9127BBFAE000F0ED80 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				47C5A9B727BD038D004D4A9A /* CardView */,
 				2754CEA727B7AB3E002761F9 /* RecipeViewModel.swift */,
 				47260E9227BBFBA900F0ED80 /* AvatarViewModel.swift */,
 			);
@@ -141,6 +145,13 @@
 				4705F17927B90D65002287C5 /* Ingredient.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		47C5A9B727BD038D004D4A9A /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CardView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +237,7 @@
 				47A0B53927B6642D0021DE98 /* Recipe.swift in Sources */,
 				2754CEA827B7AB3E002761F9 /* RecipeViewModel.swift in Sources */,
 				4705F17A27B90D65002287C5 /* Ingredient.swift in Sources */,
+				47C5A9B627BCF6CB004D4A9A /* RecipeCardView.swift in Sources */,
 				4705F17127B90119002287C5 /* Avatar.swift in Sources */,
 				2780A37C27B65BFF001B34CE /* RecipesView.swift in Sources */,
 				2702B04A27B652C100A0E5DD /* Ladle_thePlotApp.swift in Sources */,

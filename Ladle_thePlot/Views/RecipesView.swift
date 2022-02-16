@@ -9,8 +9,8 @@ import SwiftUI
 import UIKit
 
 struct RecipesView: View {
-//    @StateObject var recipeInfo = RecipeList()
-//Layout for the 3row grid
+    @StateObject private var modelView = RecipeViewModel()
+    
     let layout = [
         GridItem(.flexible(minimum: 175)),
         GridItem(.flexible(minimum: 175)),

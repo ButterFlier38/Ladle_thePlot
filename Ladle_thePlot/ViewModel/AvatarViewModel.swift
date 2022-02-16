@@ -10,13 +10,13 @@ class AvatarViewModel : ObservableObject {
     @Published private var selectedAvatar = Set<UUID>()
     
     @Published var avatarsStorage : [Avatar] = [
-    Avatar(name: "giorgia", image: "character_giorgia", headImage: "head_giorgia", backgroundColor: "bggreen", selectedColor: "selectiongreen", isChoosen: false),
+    Avatar(name: "giorgia", image: "character_giorgia", headImage: "head_giorgia", backgroundColor: "bggreen", selectedColor: "selectiongreen"),
     
-    Avatar(name: "gino", image: "character_gino", headImage: "head_gino", backgroundColor: "bgpink", selectedColor: "selectionpink", isChoosen: false),
+    Avatar(name: "gino", image: "character_gino", headImage: "head_gino", backgroundColor: "bgpink", selectedColor: "selectionpink"),
     
-    Avatar(name: "tonia", image: "character_tonia", headImage: "head_tonia", backgroundColor: "bgblue", selectedColor: "selectionblue", isChoosen: false),
+    Avatar(name: "tonia", image: "character_tonia", headImage: "head_tonia", backgroundColor: "bgblue", selectedColor: "selectionblue"),
     
-    Avatar(name: "nino", image: "character_nino", headImage: "head_nino", backgroundColor: "bgyellow", selectedColor: "selectionyellow", isChoosen: false)]
+    Avatar(name: "nino", image: "character_nino", headImage: "head_nino", backgroundColor: "bgyellow", selectedColor: "selectionyellow")]
  
     func isAvatarSelected(id: UUID) -> Bool {
         return selectedAvatar.contains(id) ? true : false

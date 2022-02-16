@@ -14,5 +14,4 @@ struct Avatar : Codable, Identifiable {
     var headImage :String
     var backgroundColor :String
     var selectedColor :String
-    var isChoosen :Bool
 }
