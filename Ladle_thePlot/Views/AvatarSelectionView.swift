@@ -46,6 +46,7 @@ struct AvatarSelectionView: View {
                 } // :ForEach
             }.padding(.horizontal, 20) // :HStack
             
+            
             NavigationLink {
                 RecipesView()
             } label: {
