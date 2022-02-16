@@ -45,7 +45,7 @@ struct IngredientsView: View {
                       
                         
                 }
-                    Text("100 ml of Cndensed Milk")
+                    Text("100 ml of Condensed Milk")
                         .font(Font.custom("HappyMonkey-Regular", size:30 )).fontWeight(.bold).foregroundColor(CustomColor.selectionblue)  .frame(maxWidth: .infinity, alignment: .center) .padding(.leading)
                     
                 }
