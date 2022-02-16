@@ -26,6 +26,7 @@ struct CustomColor {
 
 struct NameInputView: View {
     @State private var username: String = ""
+   
     var body: some View {
         GeometryReader { geometry in
         ZStack{
@@ -53,15 +54,20 @@ struct NameInputView: View {
                                     .overlay(
                                          RoundedRectangle(cornerRadius: 60)
                                              .stroke(CustomColor.selectionblue, lineWidth: 4))
-
+                    
                     TextField("Input name", text: $username).frame(width: 300, height: 80, alignment: .center).font(Font.custom("HappyMonkey-Regular", size: 20)).foregroundColor(CustomColor.selectionblue) .shadow(color: CustomColor.bgblue, radius: 1)
                    }
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                NavigationLink {
+                    AvatarSelectionView()
+                   
+                } label: {
                     RoundedRectangle(cornerRadius: 60, style: .continuous)
-                                    .fill(CustomColor.selectionblue)
-                                    .frame(width: 200, height: 60, alignment: .center)
-                                    .overlay(
-                                        Text("Continue").font(Font.custom("HappyMonkey-Regular", size: 25 )).foregroundColor(.white).shadow(color: .white, radius: 1))                }
+                        .fill(username.isEmpty ?  CustomColor.selectionblue.opacity(0.4) : CustomColor.selectionblue)
+                        .frame(width: 200, height: 60, alignment: .center)
+                        .overlay(
+                            Text("Continue").font(Font.custom("HappyMonkey-Regular", size: 25 )).foregroundColor(.white).shadow(color: .white, radius: 1))
+                }.disabled(username.isEmpty)
+               
                
                 
             }

@@ -75,10 +75,10 @@ struct StepsView: View {
             }.frame(maxWidth: .infinity, alignment: .trailing).padding(.trailing, 70)
                 
             }
-//            .navigationBarHidden(true)
+            .navigationBarHidden(true)
                 Spacer()
                 NavigationLink {
-//                                LetsmakeitView()
+                                CreateRecipeView()
                              } label: {
                                  RoundedRectangle(cornerRadius: 60, style: .continuous)
                                      .fill(CustomColor.selectionblue)

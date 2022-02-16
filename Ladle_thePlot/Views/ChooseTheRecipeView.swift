@@ -30,7 +30,7 @@ struct ChooseTheRecipeView: View {
             VStack(alignment: .leading) {
                 
                 Text("Recipes").font(Font.custom("HappyMonkey-Regular", size: 70 )).fontWeight(.bold)
-                    .foregroundColor(CustomColor.selectionblue)  .frame(maxWidth: .infinity, alignment: .leading) .padding(.leading)
+                    .foregroundColor(CustomColor.selectionblue)  .frame(maxWidth: .infinity, alignment: .leading) .padding(.leading,50)
                     .shadow(color: CustomColor.selectionblue, radius: 3)
                 
                 LazyVGrid(columns: layout ,content: {

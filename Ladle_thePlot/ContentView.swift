@@ -10,7 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView  {
-            AvatarSelectionView()
+//            AvatarSelectionView()
+            NameInputView()
         }.navigationBarHidden(true)
             .navigationViewStyle(StackNavigationViewStyle())
     

@@ -51,7 +51,7 @@ struct CreateRecipeView: View {
                                 .aspectRatio(0.7, contentMode: .fit)
                                 .position(x: 120, y: 650)
         }
-            }
+            }.navigationBarHidden(true)
     }
     }
 }
