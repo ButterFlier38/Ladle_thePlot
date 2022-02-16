@@ -9,7 +9,7 @@ import SwiftUI
 import UIKit
 
 struct RecipesView: View {
-    @StateObject var recipeInfo = RecipeList()
+//    @StateObject var recipeInfo = RecipeList()
 //Layout for the 3row grid
     let layout = [
         GridItem(.flexible(minimum: 175)),
@@ -108,6 +108,7 @@ struct RecipesView: View {
                                                          .stroke(Color.gray, lineWidth: 4).padding())
                 }
            })
+                .navigationBarHidden(true)
      }
    }
 }
