@@ -21,6 +21,7 @@ struct RecipesView: View {
     
     
     var body: some View {
+        GeometryReader { geometry in
         ZStack{
             Circle().foregroundColor(CustomColor.bgpink).scaleEffect(0.4).position(x: 150, y: 0)
             Circle().foregroundColor(CustomColor.bgyellow).scaleEffect(0.5).position(x: 900, y: 80)
@@ -110,6 +111,7 @@ struct RecipesView: View {
                 })
                     .navigationBarHidden(true)
             }
+        }
         }
     }
 }

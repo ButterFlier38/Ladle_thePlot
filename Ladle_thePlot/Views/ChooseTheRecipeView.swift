@@ -46,8 +46,8 @@ struct ChooseTheRecipeView: View {
             }
             
             
-            
-        }.navigationBarHidden(true)
+            .navigationBarHidden(true)
+        }
         
     }
 }

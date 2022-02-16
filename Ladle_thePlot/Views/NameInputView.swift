@@ -27,6 +27,7 @@ struct CustomColor {
 struct NameInputView: View {
     @State private var username: String = ""
     var body: some View {
+        GeometryReader { geometry in
         ZStack{
             Circle().foregroundColor(CustomColor.bgyellow).scaleEffect(0.7).position(x: 1050, y: 700)
             Circle().foregroundColor(CustomColor.bgpink).scaleEffect(0.7).position(x: 150, y: 100)
@@ -67,7 +68,7 @@ struct NameInputView: View {
             }
         }
     }
-
+}
 
 
 

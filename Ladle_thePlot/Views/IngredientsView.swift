@@ -27,10 +27,19 @@ struct IngredientsView: View {
                 
 //                button back
 //                Spacer()
+                HStack{
+                    Spacer().frame(width: 20)
+                    
+                        NavigationLink( destination: ChooseTheRecipeView()){
+                            ZStack{
+                    Circle().foregroundColor(CustomColor.selectionblue).frame(width: 100, height: 100)
+                            Image(systemName: "arrowshape.turn.up.backward.fill").scaleEffect(2.5).foregroundColor(.white)}
+                    }
+            Text("Ingredients").font(Font.custom("HappyMonkey-Regular", size: 80 )).fontWeight(.bold).foregroundColor(CustomColor.selectionblue)  .frame(maxWidth: .infinity, alignment: .leading) .padding(.leading)              .shadow(color: CustomColor.selectionblue, radius: 10)
+                }
+
                 
                 
-                Text ("Ingredients")
-                    .font(Font.custom("HappyMonkey-Regular", size: 80 )).fontWeight(.bold).foregroundColor(CustomColor.selectionblue)  .frame(maxWidth: .infinity, alignment: .leading) .padding(.leading)
                     
             Spacer()
                             
@@ -116,7 +125,7 @@ struct IngredientsView: View {
             
             
             NavigationLink {
-               LetsmakeitView()
+              StepsView()
             } label: {
                 RoundedRectangle(cornerRadius: 60, style: .continuous)
                     .fill(CustomColor.selectionblue)
@@ -129,7 +138,7 @@ struct IngredientsView: View {
 //
             
         } //close zstack
-            
+        .navigationBarHidden(true)
         } //close geometry reader
         }
 }

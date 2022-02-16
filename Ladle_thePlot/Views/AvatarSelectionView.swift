@@ -12,6 +12,7 @@ struct AvatarSelectionView: View {
     
     var body: some View {
         //        NavigationView {
+        GeometryReader { geometry in
         VStack {
             // All the avatars on the top of the view
             ZStack {
@@ -45,7 +46,7 @@ struct AvatarSelectionView: View {
                     
                 } // :ForEach
             }.padding(.horizontal, 20) // :HStack
-            
+        
             // Continue button
             NavigationLink {
                 ChooseTheRecipeView()
@@ -58,12 +59,14 @@ struct AvatarSelectionView: View {
             } // :Continue Button
             .padding(.bottom)
             .disabled(modelView.isSomeAvatarSelected())
-        }
+        }}
         .cornerRadius(25)
         .overlay(
             RoundedRectangle(cornerRadius: 25, style: .continuous)
                 .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.2), lineWidth: 1))
         .frame(width: 800, height: 650, alignment: .center)
+//    }
+        .navigationBarHidden(true)
     }
 }
 
