@@ -46,17 +46,18 @@ struct AvatarSelectionView: View {
                 } // :ForEach
             }.padding(.horizontal, 20) // :HStack
             
-            
+            // Continue button
             NavigationLink {
                 RecipesView()
             } label: {
                 RoundedRectangle(cornerRadius: 60, style: .continuous)
-                    .fill(CustomColor.selectionblue)
+                    .fill(modelView.isSomeAvatarSelected() ?  CustomColor.selectionblue.opacity(0.4) : CustomColor.selectionblue)
                     .frame(width: 200, height: 60, alignment: .center)
                     .overlay(
                         Text("Continue").font(Font.custom("HappyMonkey-Regular", size: 25 )).foregroundColor(.white).shadow(color: .white, radius: 1))
             } // :Continue Button
             .padding(.bottom)
+            .disabled(modelView.isSomeAvatarSelected())
         }
         .cornerRadius(25)
         .overlay(

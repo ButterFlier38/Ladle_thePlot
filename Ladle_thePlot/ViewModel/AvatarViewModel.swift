@@ -36,4 +36,8 @@ class AvatarViewModel : ObservableObject {
             selectedAvatar.contains(avatar.id)
         }
     }
+    
+    func isSomeAvatarSelected() -> Bool {
+        return selectedAvatar.isEmpty
+    }
 }
