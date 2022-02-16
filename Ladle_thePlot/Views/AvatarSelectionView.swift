@@ -48,7 +48,7 @@ struct AvatarSelectionView: View {
             
             // Continue button
             NavigationLink {
-                RecipesView()
+                ChooseTheRecipeView()
             } label: {
                 RoundedRectangle(cornerRadius: 60, style: .continuous)
                     .fill(modelView.isSomeAvatarSelected() ?  CustomColor.selectionblue.opacity(0.4) : CustomColor.selectionblue)

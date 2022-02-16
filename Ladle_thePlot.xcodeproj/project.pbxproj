@@ -26,6 +26,7 @@
 		47260E9527BC242400F0ED80 /* AvatarSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47260E9427BC242400F0ED80 /* AvatarSelectionView.swift */; };
 		47A0B53927B6642D0021DE98 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A0B53827B6642D0021DE98 /* Recipe.swift */; };
 		47C5A9B627BCF6CB004D4A9A /* RecipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C5A9B527BCF6CB004D4A9A /* RecipeCardView.swift */; };
+		47C5A9B927BD04AE004D4A9A /* ChooseTheRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C5A9B827BD04AE004D4A9A /* ChooseTheRecipeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		47260E9427BC242400F0ED80 /* AvatarSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarSelectionView.swift; sourceTree = "<group>"; };
 		47A0B53827B6642D0021DE98 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		47C5A9B527BCF6CB004D4A9A /* RecipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCardView.swift; sourceTree = "<group>"; };
+		47C5A9B827BD04AE004D4A9A /* ChooseTheRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTheRecipeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				2780A37F27B65C60001B34CE /* StepsView.swift */,
 				47260E9427BC242400F0ED80 /* AvatarSelectionView.swift */,
 				47C5A9B527BCF6CB004D4A9A /* RecipeCardView.swift */,
+				47C5A9B827BD04AE004D4A9A /* ChooseTheRecipeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				2780A37827B65B87001B34CE /* AvatarSelectorView.swift in Sources */,
 				47260E9327BBFBA900F0ED80 /* AvatarViewModel.swift in Sources */,
 				47A0B53927B6642D0021DE98 /* Recipe.swift in Sources */,
+				47C5A9B927BD04AE004D4A9A /* ChooseTheRecipeView.swift in Sources */,
 				2754CEA827B7AB3E002761F9 /* RecipeViewModel.swift in Sources */,
 				4705F17A27B90D65002287C5 /* Ingredient.swift in Sources */,
 				47C5A9B627BCF6CB004D4A9A /* RecipeCardView.swift in Sources */,
