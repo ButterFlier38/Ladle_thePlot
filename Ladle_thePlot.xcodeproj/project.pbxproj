@@ -27,6 +27,7 @@
 		47A0B53927B6642D0021DE98 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A0B53827B6642D0021DE98 /* Recipe.swift */; };
 		47C5A9B627BCF6CB004D4A9A /* RecipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C5A9B527BCF6CB004D4A9A /* RecipeCardView.swift */; };
 		47C5A9B927BD04AE004D4A9A /* ChooseTheRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C5A9B827BD04AE004D4A9A /* ChooseTheRecipeView.swift */; };
+		5AC2E89527BE603D00E6FAD0 /* AretheysimilarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC2E89427BE603D00E6FAD0 /* AretheysimilarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		47A0B53827B6642D0021DE98 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		47C5A9B527BCF6CB004D4A9A /* RecipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCardView.swift; sourceTree = "<group>"; };
 		47C5A9B827BD04AE004D4A9A /* ChooseTheRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTheRecipeView.swift; sourceTree = "<group>"; };
+		5AC2E89427BE603D00E6FAD0 /* AretheysimilarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AretheysimilarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				47260E9427BC242400F0ED80 /* AvatarSelectionView.swift */,
 				47C5A9B527BCF6CB004D4A9A /* RecipeCardView.swift */,
 				47C5A9B827BD04AE004D4A9A /* ChooseTheRecipeView.swift */,
+				5AC2E89427BE603D00E6FAD0 /* AretheysimilarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				47A0B53927B6642D0021DE98 /* Recipe.swift in Sources */,
 				47C5A9B927BD04AE004D4A9A /* ChooseTheRecipeView.swift in Sources */,
 				2754CEA827B7AB3E002761F9 /* RecipeViewModel.swift in Sources */,
+				5AC2E89527BE603D00E6FAD0 /* AretheysimilarView.swift in Sources */,
 				4705F17A27B90D65002287C5 /* Ingredient.swift in Sources */,
 				47C5A9B627BCF6CB004D4A9A /* RecipeCardView.swift in Sources */,
 				4705F17127B90119002287C5 /* Avatar.swift in Sources */,
@@ -383,7 +387,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ladle_thePlot/Preview Content\"";
-				DEVELOPMENT_TEAM = Z33CSW7W9J;
+				DEVELOPMENT_TEAM = 232QK9T2BM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Ladle-thePlot-Info.plist";
@@ -415,7 +419,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ladle_thePlot/Preview Content\"";
-				DEVELOPMENT_TEAM = Z33CSW7W9J;
+				DEVELOPMENT_TEAM = 232QK9T2BM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Ladle-thePlot-Info.plist";
