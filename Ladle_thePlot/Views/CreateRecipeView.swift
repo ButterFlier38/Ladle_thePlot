@@ -7,8 +7,14 @@
 
 import SwiftUI
 
+
+
 struct CreateRecipeView: View {
+    
+    @State var dragAmount = CGSize.zero
+    
     var body: some View {
+        
         GeometryReader { geometry in
             HStack{
 //                The space for the timeline
@@ -16,43 +22,164 @@ struct CreateRecipeView: View {
                 Text("The space for the timeline!!!").frame(width: 120, height: 400)
 //
         ZStack{
+            RoundedRectangle(cornerRadius: 50, style: .continuous)
+                .foregroundColor(CustomColor.bggreen)
+                .ignoresSafeArea()
+                .offset(x: geometry.size.width/8, y: 0)
             
-            RoundedRectangle(cornerRadius: 150).foregroundColor(CustomColor.bggreen).frame(width: 1200, height: 1000)
+//            i put geometry.size.width/8 as the width of the space dedicated to the timeline in the screenso that all the other measures take this dimesnion into account
             
-            VStack{
-                Text("Let's Make It!").font(Font.custom("HappyMonkey-Regular", size: 70 )).fontWeight(.bold).foregroundColor(CustomColor.selectionblue)  .frame(maxWidth: .infinity, alignment: .center) .padding(.leading)              .shadow(color: CustomColor.selectionblue, radius: 3)
-                HStack{
-                   
-                Circle()
-                            .scaleEffect(1.1)
-                    .foregroundColor(.white)
-                    .overlay(Image("latte").scaleEffect(0.02))
-                    Circle()
-                                .scaleEffect(1.1)
-                        .foregroundColor(.white)
-                        .overlay(Image("fragola").scaleEffect(0.02))
-                    Circle()
-                                .scaleEffect(1.1)
-                        .foregroundColor(.white)
-                        .overlay(Image("fragola").scaleEffect(0.02))
-                    Circle()
-                                .scaleEffect(1.1)
-                        .foregroundColor(.white)
-                        .overlay(Image("banana").scaleEffect(0.02))
-                }.frame(width: 1000, height: 220, alignment: .center)
-                   
-                Circle()
-                            .scaleEffect(1)
-                    .foregroundColor(.white)
+            Text("Start")
+                .font(Font.custom("HappyMonkey-Regular", size: 40))
+                .foregroundColor(CustomColor.selectionblue)
+//                .shadow(color: CustomColor.selectionblue, radius: 3, x: 2, y: 2)
+                .position(x: geometry.size.width/18, y: geometry.size.height/20 - 20)
+            
+//            timeline dotted line
+            Path { path in
+                path.move(to: CGPoint(x: geometry.size.width/20, y: geometry.size.height/11))
+                path.addLine(to: CGPoint(x: geometry.size.width/20, y: geometry.size.height - 50))
+
             }
-            Image ("character_giorgia")
+            .stroke(CustomColor.selectionblue, style: StrokeStyle(lineWidth: 10, dash: [20]))
+            
+            
+//            timeline
+            VStack (alignment: .trailing, spacing: 2){
+                
+              
+                    
+
+                Group {
+//               for in in steps yit needs to print the number in the circle
+                    Circle()
+                        .overlay(
+                    Text("1")
+                        .font(Font.custom("HappyMonkey-Regular", size: 80))
+                        .foregroundColor(.white)
+                        )
+                    Circle()
+                        .overlay(
+                    Text("2")
+                        .font(Font.custom("HappyMonkey-Regular", size: 80))
+                        .foregroundColor(.white)
+                        )
+                    Circle()
+                        .overlay(
+                    Text("3")
+                        .font(Font.custom("HappyMonkey-Regular", size: 80))
+                        .foregroundColor(.white)
+                        )
+                    Circle()
+                        .overlay(
+                    Text("4")
+                        .font(Font.custom("HappyMonkey-Regular", size: 80))
+                        .foregroundColor(.white)
+                        )
+                    Circle()
+                        .overlay(
+                    Text("5")
+                        .font(Font.custom("HappyMonkey-Regular", size: 80))
+                        .foregroundColor(.white)
+                        )
+                }
+                .scaleEffect(0.5)
+                .foregroundColor(CustomColor.selectionblue)
+                
+            }.position(x: geometry.size.width/20, y: geometry.size.width/3)
+            
+            VStack (spacing:2) {
+                
+                Text("Let's make it!")
+                    .font(Font.custom("HappyMonkey-Regular", size: 80))
+                    .foregroundColor(CustomColor.selectionblue)
+                
+                HStack(spacing:8){
+                    
+//                    ingredients to drag and drop
+
+                    Group{
+                        ZStack{
+                        Circle()
+                            Image("latte")
                                 .resizable()
-                                .scaleEffect(0.35)
-                                .aspectRatio(0.7, contentMode: .fit)
-                                .position(x: 120, y: 650)
-        }
-            }.navigationBarHidden(true)
-    }
+                                .scaledToFit()
+                                .scaleEffect(0.8)
+                                .offset(dragAmount)
+                                .zIndex(dragAmount == .zero ? 1 : 0)
+//                            work on this one to drag on top of things
+//                            works only on the current zstack
+                            
+                            
+//                            drag gesture
+                                .gesture(DragGesture(coordinateSpace: .global)
+                                            .onChanged{ self.dragAmount = CGSize(width : $0.translation.width, height: $0.translation.height)
+                                }
+                                            .onEnded { _ in
+                                                      self.dragAmount = .zero
+                                }
+
+                                )
+//
+                        }
+                        ZStack{
+                        Circle()
+                            Image("character_tonia")
+                                .resizable()
+                                .scaledToFit()
+                                .scaleEffect(0.8)
+                        }
+                        
+                        ZStack{
+                        Circle()
+                            Image("fragola")
+                                .resizable()
+                                .scaledToFit()
+                                .scaleEffect(0.8)
+                        }
+                        
+                        ZStack{
+                        Circle()
+                            Image("banana")
+                                .resizable()
+                                .scaledToFit()
+                                .scaleEffect(0.8)
+                        }
+                    
+                    
+                    }
+                    .foregroundColor(.white)
+                    
+                } //close Hstack
+                .frame(width: geometry.size.width - geometry.size.width/8, height: geometry.size.height/3, alignment: .trailing)
+                .offset(x: geometry.size.width/15 , y:0)
+                
+//                avatar
+                
+                
+                HStack{
+                Image ("character_giorgia")
+                        .resizable()
+                        .scaleEffect(0.8)
+                        .aspectRatio(0.7, contentMode: .fit)
+//                        .position(x: 250, y: 650)
+                        .position(x: geometry.size.width/4.3, y: geometry.size.height/2.6)
+                    
+//                    blender
+                    Circle()
+//                        .resizable()
+                        .scaleEffect(1.2)
+//                        .aspectRatio(0.7, contentMode: .fit)
+//                        .position(x: 250, y: 650)
+                        .position(x: geometry.size.width/4.3, y: geometry.size.height/3)
+                    
+                
+                }
+                
+            } //close the VSTack
+            
+        } //close the ZStack
+        } //close geometry bracket
     }
 }
 
